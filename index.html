@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Mobile Optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3DEXPERIENCE World 2025 - SOLIDWORKS Focus</title>
+  <style>
+    /* 
+      3DS & SOLIDWORKS Branding Colors:
+      --white: #FFFFFF;
+      --3ds-blue: #005686;
+      --light-blue-cyan: #009CDE;
+      --solidworks-red: #DA291C;
+    */
+    :root {
+      --white: #FFFFFF;
+      --3ds-blue: #005686;
+      --light-blue-cyan: #009CDE;
+      --solidworks-red: #DA291C;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: var(--3ds-blue);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    header {
+      background-color: var(--solidworks-red);
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 1.8rem;
+    }
+    
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* LINKS SECTION */
+    .links-section {
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      background-color: var(--solidworks-red);
+    }
+    
+    .card {
+      background-color: var(--white);
+      color: var(--3ds-blue);
+      border-radius: 8px;
+      width: 280px;
+      max-width: 90vw;
+      /* Increased shadow for better separation */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    /* New image container: bigger & centered */
+    .image-container {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--white);
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      padding: 1rem;
+    }
+    
+    .card-content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-content p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+    
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: var(--white);
+      color: var(--3ds-blue);
+    }
+    
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    .hero h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero p {
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    footer {
+      background-color: var(--solidworks-red);
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    footer p {
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive adjustments */
+    @media (min-width: 768px) {
+      .card {
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>3DEXPERIENCE World 2025</h1>
+  </header>
+  
+  <main>
+    <!-- LINKS SECTION: First thing users see -->
+    <section class="links-section">
+      <!-- CARD 1: LinkedIn (Now behaves like other cards) -->
+      <a href="https://www.linkedin.com/in/kishore005/" target="_blank" rel="noopener noreferrer" class="card" id="linkedin-card">
+        <div class="image-container">
+          <img src="LI.jpg" alt="LinkedIn Icon" />
+        </div>
+        <div class="card-content">
+          <h2>My LinkedIn Profile</h2>
+          <p>Connect with me on LinkedIn to stay updated on the latest in design and innovation.</p>
+        </div>
+      </a>
+      
+      <!-- CARD 2: SOLIDWORKS Customer Advisory Board and Data for AI -->
+      <a href="https://solidworks.com/advisoryboard" target="_blank" rel="noopener noreferrer" class="card">
+        <div class="image-container">
+          <img src="cab.png" alt="SOLIDWORKS Logo" />
+        </div>
+        <div class="card-content">
+          <h2>SW Customer Advisory Board &amp; Data for AI</h2>
+          <p>Join the SOLIDWORKS community to shape the future of AI-driven product design.</p>
+        </div>
+      </a>
+      
+      <!-- CARD 3: Lighthouse for Mechatronics -->
+      <a href="https://discover.solidworks.com/3d-mechatronics-creator-lighthouse-program" target="_blank" rel="noopener noreferrer" class="card">
+        <div class="image-container">
+          <img src="lighthouse.png" alt="Mechatronics Illustration" />
+        </div>
+        <div class="card-content">
+          <h2>Lighthouse for Mechatronics</h2>
+          <p>Discover the latest in mechatronics solutions and transform your engineering process.</p>
+        </div>
+      </a>
+    </section>
+    
+    <!-- HERO SECTION: 3DEXPERIENCE World Image and Info -->
+    <section class="hero">
+      <img src="world2025.png" alt="3DEXPERIENCE World 2025" />
+      <h2>Welcome to 3DEXPERIENCE World 2025</h2>
+      <p>
+        3DEXPERIENCE World 2025 brings together a vibrant community of designers, engineers, entrepreneurs,
+        and business leaders. This dynamic event is your opportunity to explore the latest innovations in the
+        3DEXPERIENCE Works portfolio and the SOLIDWORKS ecosystem.
+        <br /><br />
+        3DEXPERIENCE World 2025 is coming to Houston, TX from February 23-26. Mark your calendar and
+        prepare for an exciting, in-person experience!
+        <br /><br />
+        Join the <a href="https://r1132100503382-eu1-3dswym.3dexperience.3ds.com/community/swym:prd:R1132100503382:community:52" target="_blank" rel="noopener noreferrer">SOLIDWORKS News &amp; Info Community</a> for the most up-to-date event information.
+      </p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Dassault Systèmes. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    // Optional JavaScript can go here if needed.
+  </script>
+</body>
+</html>
